@@ -22,4 +22,4 @@ Túto aplikáciu vyvíjam vo svojom voľnom čase ako dar pre komunitu. Ak vám 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/huddan)
 
 ## 📩 Kontakt a návrhy
-Ak nájdete chybu alebo máte nápad na vylepšenie, neváhajte otvoriť **Issue** tu na GitHube alebo ma kontaktujte na `[macbooxedit@gmail.com]`.
+Ak nájdete chybu alebo máte nápad na vylepšenie, neváhajte otvoriť **Issue** tu na GitHube alebo ma kontaktujte na `[macboxedit@gmail.com]`.
