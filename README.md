@@ -1,4 +1,4 @@
-# 📡 MacBoxEdit
+# 📡 MacBoxEdit - "Enigma2-Channel-Editor"
 Ľahký editor zoznamu kanálov Enigma2 pre macOS (Apple Silicon M).
 
 MacBoxEdit je jednoduchý, natívny a bleskurýchly nástroj pre používateľov macOS (Apple Silicon), ktorí potrebujú spravovať zoznamy kanálov vo svojich satelitných prijímačoch so systémom **Enigma2** (Dreambox, Vu+, Octagon a ďalšie). Už nemusíte používať pomalé emulátory alebo zložité nástroje. Táto aplikácia bola vytvorená špeciálne pre moderné Mac procesory (M1, M2, M3, ...).
