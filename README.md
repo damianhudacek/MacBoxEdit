@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# 📡 MacBoxEdit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Zjednodušený, natívny a bleskurýchly editor kanálov pre Enigma2 (Dreambox, Vu+, atď.) vytvorený špeciálne pre macOS (Apple Silicon M1/M2/M3...).**
 
-Currently, two official plugins are available:
+Už nemusíte používať zložité nástroje cez emuláciu. Táto aplikácia beží natívne, je postavená na Electron + TypeScript a umožňuje vám spravovať vaše sety kanálov rýchlo a pohodlne.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Hlavné funkcie
+* 📥 **Rýchly import:** Stiahnutie zoznamu kanálov priamo z prijímača cez FTP.
+* 📂 **Správa kytíc (Bouquets):** Jednoduché preusporiadanie, mazanie a úprava staníc.
+* 📤 **Export späť:** Nahranie upraveného zoznamu do prijímača + automatický Reload.
+* ⚡ **Native Apple Silicon:** Plná podpora pre čipy M1, M2 a M3.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Inštalácia (Dôležité!)
+1. Choďte do sekcie **[Releases](https://github.com/damianhudacek/macboxedit/releases)** a stiahnite si súbor `.dmg`.
+2. Otvorte ho a presuňte aplikáciu do priečinka **Applications**.
+3. **Prvé spustenie:** Keďže aplikácia nie je v App Store, macOS ju zablokuje. Kliknite na ikonku v Aplikáciách **Pravým tlačidlom (Ctrl+klik) -> Otvoriť** a potvrďte výnimku.
 
-## Expanding the ESLint configuration
+## 🛠️ Pre vývojárov
+Tento projekt je **Open Source**. 
+* Stack: Electron, TypeScript, Vite.
+* Ak chcete prispieť, stačí urobiť Fork alebo otvoriť Issue.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ☕ Podporte vývoj
+Ak vám aplikácia uľahčila prácu, budem vďačný za vašu podporu:
+👉 **[Kúpiť kávu (Buy Me a Coffee)](https://www.buymeacoffee.com/HudDan)**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Vytvorené pre komunitu satelitných nadšencov.*
