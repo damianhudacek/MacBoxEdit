@@ -1,25 +1,73 @@
-# 📡 MacBoxEdit - "Enigma2-Channel-Editor"
-Ľahký editor zoznamu kanálov Enigma2 pre macOS (Apple Silicon M).
+# React + TypeScript + Vite
 
-MacBoxEdit je jednoduchý, natívny a bleskurýchly nástroj pre používateľov macOS (Apple Silicon), ktorí potrebujú spravovať zoznamy kanálov vo svojich satelitných prijímačoch so systémom **Enigma2** (Dreambox, Vu+, Octagon a ďalšie). Už nemusíte používať pomalé emulátory alebo zložité nástroje. Táto aplikácia bola vytvorená špeciálne pre moderné Mac procesory (M1, M2, M3, ...).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## ✨ Hlavné funkcie
-* 📥 **Rýchly import:** Stiahnutie zoznamu kanálov priamo z prijímača cez FTP.
-* 📂 **Správa kytíc (Bouquets):** Jednoduché preusporiadanie a mazanie staníc.
-* 📤 **Export späť:** Nahranie upraveného zoznamu do prijímača jedným kliknutím.
-* ⚡ **Native Performance:** Plná podpora pre Apple Silicon architektúru.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 🚀 Inštalácia
-1. Choďte do sekcie [[Releases][(https://github.com/damianhudacek/MacBoxEdit/releases)] a stiahnite si najnovší `.zip` súbor.
-2. Rozbaľte archív a presuňte aplikáciu do priečinka **Applications**.
-3. Pri prvom spustení (keďže aplikácia nie je v App Store) kliknite na ikonku **Pravým tlačidlom -> Otvoriť**.
+## React Compiler
 
-## ☕ Podporte vývoj
-Túto aplikáciu vyvíjam vo svojom voľnom čase ako dar pre komunitu. Ak vám uľahčila život a chcete ma podporiť pri pridávaní nových funkcií, môžete mi kúpiť kávu:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/huddan)
+## Expanding the ESLint configuration
 
-## 📩 Kontakt a návrhy
-Ak nájdete chybu alebo máte nápad na vylepšenie, neváhajte otvoriť **Issue** tu na GitHube alebo ma kontaktujte na `[macboxedit@gmail.com]`.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
