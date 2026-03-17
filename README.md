@@ -10,7 +10,7 @@ No more struggling with complex tools through emulation. This app runs natively,
 * 📥 **Quick Import:** Download channel lists directly from your receiver via FTP.
 * 📂 **Bouquet Management:** Easily reorder, delete, and edit stations.
 * 📤 **Export Back:** Upload the edited list to your receiver with an automatic Reload.
-* ⚡ **Native Apple Silicon:** Full support for M1, M2, and M3 chips.
+* ⚡ **Native Apple Silicon:** Full support for M chips.
 
 ## 🚀 Installation (Important!)
 1. Go to the **[Releases](https://github.com/damianhudacek/macboxedit/releases)** section and download the `.dmg` file.
