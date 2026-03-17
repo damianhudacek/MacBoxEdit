@@ -1,30 +1,31 @@
-# 📡 MacBoxEdit
+📡 MacBoxEdit 
+A simplified, native, and lightning-fast channel editor for Enigma2 (Dreambox, Vu+, etc.) built specifically for macOS (Apple Silicon M1/M2/M3...).
 
-**Zjednodušený, natívny a bleskurýchly editor kanálov pre Enigma2 (Dreambox, Vu+, atď.) vytvorený špeciálne pre macOS (Apple Silicon M1/M2/M3...).**
+No more struggling with complex tools through emulation. This app runs natively, is built on Electron + TypeScript, and allows you to manage your channel sets quickly and conveniently.
 
-Už nemusíte používať zložité nástroje cez emuláciu. Táto aplikácia beží natívne, je postavená na Electron + TypeScript a umožňuje vám spravovať vaše sety kanálov rýchlo a pohodlne.
+✨ Key Features
+📥 Quick Import: Download channel lists directly from your receiver via FTP.
 
----
+📂 Bouquet Management: Easily reorder, delete, and edit stations.
 
-## ✨ Hlavné funkcie
-* 📥 **Rýchly import:** Stiahnutie zoznamu kanálov priamo z prijímača cez FTP.
-* 📂 **Správa kytíc (Bouquets):** Jednoduché preusporiadanie, mazanie a úprava staníc.
-* 📤 **Export späť:** Nahranie upraveného zoznamu do prijímača + automatický Reload.
-* ⚡ **Native Apple Silicon:** Plná podpora pre čipy M1, M2 a M3.
+📤 Export Back: Upload the edited list to your receiver with an automatic Reload.
 
-## 🚀 Inštalácia (Dôležité!)
-1. Choďte do sekcie **[Releases](https://github.com/damianhudacek/macboxedit/releases)** a stiahnite si súbor `.dmg`.
-2. Otvorte ho a presuňte aplikáciu do priečinka **Applications**.
-3. **Prvé spustenie:** Keďže aplikácia nie je v App Store, macOS ju zablokuje. Kliknite na ikonku v Aplikáciách **Pravým tlačidlom (Ctrl+klik) -> Otvoriť** a potvrďte výnimku.
+⚡ Native Apple Silicon: Full support for M1, M2, and M3 chips.
 
-## 🛠️ Pre vývojárov
-Tento projekt je **Open Source**. 
-* Stack: Electron, TypeScript, Vite.
-* Ak chcete prispieť, stačí urobiť Fork alebo otvoriť Issue.
+🚀 Installation (Important!)
+Go to the Releases section and download the .dmg file.
 
-## ☕ Podporte vývoj
-Ak vám aplikácia uľahčila prácu, budem vďačný za vašu podporu:
-👉 **[Kúpiť kávu (Buy Me a Coffee)](https://www.buymeacoffee.com/HudDan)**
+Open it and drag the application into the Applications folder.
 
----
-*Vytvorené pre komunitu satelitných nadšencov.*
+First Launch: Since the app is not in the App Store, macOS will block it. Right-click (Ctrl+click) -> Open the app icon in your Applications folder and confirm the exception.
+
+🛠️ For Developers
+This project is Open Source.
+
+Stack: Electron, TypeScript, Vite.
+
+To contribute, simply create a Fork or open an Issue.
+
+☕ Support Development
+If this app has made your life easier, I would be grateful for your support:
+👉 Buy Me a Coffee
