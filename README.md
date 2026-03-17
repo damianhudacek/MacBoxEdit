@@ -12,7 +12,7 @@ MacBoxEdit je jednoduchý, natívny a bleskurýchly nástroj pre používateľov
 * ⚡ **Native Performance:** Plná podpora pre Apple Silicon architektúru.
 
 ## 🚀 Inštalácia
-1. Choďte do sekcie [Releases](odkaz-na-tvoj-release-vpravo) a stiahnite si najnovší `.zip` súbor.
+1. Choďte do sekcie [[Releases][(https://github.com/damianhudacek/MacBoxEdit/releases)] a stiahnite si najnovší `.zip` súbor.
 2. Rozbaľte archív a presuňte aplikáciu do priečinka **Applications**.
 3. Pri prvom spustení (keďže aplikácia nie je v App Store) kliknite na ikonku **Pravým tlačidlom -> Otvoriť**.
 
